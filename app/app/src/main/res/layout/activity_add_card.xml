@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lyus.myapplication.AddCard">
+
+    <TextView
+        android:text="Add a Credit Card!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="24dp"
+        android:id="@+id/TvName"
+        android:hint="Name on the Card"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/TvCCN" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginTop="89dp"
+        android:id="@+id/TvCCN"
+        android:hint="Credit Card Number"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/TvCCN"
+        android:layout_alignStart="@+id/TvCCN"
+        android:layout_marginTop="25dp"
+        android:id="@+id/TvCCV"
+        android:hint="CCV" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:layout_below="@+id/TvCCV"
+        android:layout_alignStart="@+id/TvCCV"
+        android:layout_marginTop="33dp"
+        android:id="@+id/TvExpDate"
+        android:hint="Expiration Date" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="?android:attr/textCheckMark"
+        android:layout_marginTop="45dp"
+        android:id="@+id/ImgBtnSubmit"
+        android:layout_below="@+id/TvExpDate"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
