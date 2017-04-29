@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CustomListview</string>
+
+    <string-array name="accounts">
+        <item>Add Card</item>
+        <item>Change Security</item>
+        <item>Change User Setting</item>
+        <item>Unlink Card</item>
+        <item>Add Family</item>
+        <item>Log out</item>
+    </string-array>
+</resources>
