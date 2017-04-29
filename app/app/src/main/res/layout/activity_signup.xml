@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="com.example.lyus.myapplication.Signup">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="First name"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="67dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="23dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="Last name"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="26dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="User name"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="173dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText3"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="21dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="Email address"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="224dp" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword|textVisiblePassword"
+        android:singleLine="true"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="267dp"
+        android:layout_below="@+id/editText4"
+        android:layout_alignStart="@+id/editText4" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText5"
+        android:layout_below="@+id/editText5"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword|textVisiblePassword"
+        android:singleLine="true"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="319dp" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:background="@android:color/holo_orange_light"
+        android:backgroundTint="?android:attr/colorControlHighlight"
+        android:text="Register"
+        android:textColor="@android:color/black"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="381dp" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button3"
+        android:layout_alignEnd="@+id/button3"
+        android:background="@android:color/holo_orange_dark"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="Cancel"
+        android:textColor="@android:color/black"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="381dp" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="215dp"
+        android:layout_height="48dp"
+        android:background="@android:color/background_light"
+        android:text="Clean"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="429dp"
+        android:layout_marginBottom="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editText6" />
+
+</android.widget.RelativeLayout>

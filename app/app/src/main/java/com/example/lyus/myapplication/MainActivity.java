@@ -1,35 +1,26 @@
 package com.example.lyus.myapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-// Array of options --> Array
+import android.view.View;
+import android.widget.Button;
 
-// list view {view: da_items.xml}
 public class MainActivity extends AppCompatActivity {
+
+    private Button btnLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        yoyopayListView();
-    }
-    private void yoyopayListView()
-    {
-        String[] myItems= {"Blue", "Green", "Purple", "Red"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>
-                (this, android.R.layout.simple_list_item_1,       // layout to use (create)
-                        myItems);       // Items to be displayed
-
-
-        ListView list =(ListView) findViewById(R.id.item);
-        list.setAdapter(adapter);
-    }
-
-    public void print(){
-        System.out.println("Something");
-
+        btnLogin = (Button) findViewById(R.id.BtnLogin);
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, Login.class);
+                startActivity(i);
+            }
+        });
     }
 }
