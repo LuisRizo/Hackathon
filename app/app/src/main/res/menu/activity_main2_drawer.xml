@@ -11,7 +11,7 @@
         android:title="Change Security" />
     <item
         android:id="@+id/nav_slideshow"
-        android:icon="?android:attr/actionModeFindDrawable"
+        android:icon="@android:drawable/ic_input_get"
         android:title="Transaction History" />
     <item
         android:id="@+id/nav_gallery"

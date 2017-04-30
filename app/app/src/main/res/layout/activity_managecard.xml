@@ -21,22 +21,14 @@
             android:text="Button" />
     </RelativeLayout>
 
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="?android:attr/windowBackground"
-        app:menu="@menu/navigation" />
-
     <Button
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/navigation"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:text="Switch Card" />
+        android:layout_marginTop="73dp"
+        android:text="Switch Card"
+        android:layout_below="@+id/content"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/button6"
