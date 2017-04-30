@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "746625770792",
+    "firebase_url": "https://yoyo-pay.firebaseio.com",
+    "project_id": "yoyo-pay",
+    "storage_bucket": "yoyo-pay.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746625770792:android:8c158a779bd6ae8f",
+        "android_client_info": {
+          "package_name": "com.example.lyus.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746625770792-mergvplhcjh6j3vtl16a3579b0khdfih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7mfLirKOe75W9jRO8WatgYcpb18p3DCA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
