@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="?android:attr/actionModeCopyDrawable"
+        android:title="Manage Card" />
+    <item
+        android:id="@+id/nav_manage"
+        android:icon="@android:drawable/ic_lock_lock"
+        android:title="Change Security" />
+    <item
+        android:id="@+id/nav_slideshow"
+        android:icon="@android:drawable/ic_input_get"
+        android:title="Transaction History" />
+    <item
+        android:id="@+id/nav_gallery"
+        android:icon="@drawable/ic_menu_manage"
+        android:title="Setting" />
+    <item
+        android:id="@+id/nav_camera"
+        android:icon="@android:drawable/btn_dialog"
+        android:title="Log Out" />
+    <group android:checkableBehavior="single"></group>
+
+</menu>

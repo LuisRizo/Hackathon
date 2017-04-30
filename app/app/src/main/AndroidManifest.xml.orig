@@ -4,9 +4,15 @@
     package="com.example.lyus.myapplication">
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
+<<<<<<< HEAD
+    <!-- <uses-permission android:name="android.permission.GET_ACCOUNTS" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_PROFILE" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_CONTACTS" /> -->
+=======
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+>>>>>>> 9f06b970351eaeacbd651d60bd0235a0f890228e
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
 
@@ -24,6 +30,7 @@
         <activity
             android:name=".Signup"
             android:label="@string/action_sign_up" />
+<<<<<<< HEAD
         <activity android:name=".Register" />
         <activity android:name=".Fingerprint"/>
         <activity android:name=".MainFingerprintActivity">
@@ -34,6 +41,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".SettingsActivity"/>
+=======
         <activity
             android:name=".Main2Activity"
             android:label="@string/title_activity_main2"
@@ -46,6 +54,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.lyus.myapplication.Main2Activity" />
         </activity>
+>>>>>>> 9f06b970351eaeacbd651d60bd0235a0f890228e
     </application>
 
 </manifest>
