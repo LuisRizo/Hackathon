@@ -1,21 +1,25 @@
 import React, {Component} from 'react'
 import {
 	View,
-	Text,
 	StyleSheet,
-	TouchableOpacity,
 } from 'react-native'
+
+import FingerPrint from '../components/FingerPrint'
 
 class App extends Component {
 	render(){
 		return(
-			<View>
-				<Text>
-					Main Container
-				</Text>
+			<View style={styles.MainContainer}>
+				<FingerPrint/>
 			</View>
 		)
 	}
 }
 
-module export App;
+const styles = StyleSheet.create({
+	MainContainer: {
+		flex:1,
+	}
+})
+
+export default App;
