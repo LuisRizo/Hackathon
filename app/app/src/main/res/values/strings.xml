@@ -16,4 +16,21 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
+    <string-array name="row">
+        <item>Facebook</item>
+        <item>LaGuardia</item>
+        <item>google</item>
+        <item>CUNY</item>
+        <item>Heackathon</item>
+    </string-array>
+
+    <string-array name="description">
+        <item>Facebook Decription</item>
+        <item>LaGuardia Decription</item>
+        <item>google Decription</item>
+        <item>CUNY Decription</item>
+        <item>Heackathon Decription</item>
+
+    </string-array>
 </resources>
