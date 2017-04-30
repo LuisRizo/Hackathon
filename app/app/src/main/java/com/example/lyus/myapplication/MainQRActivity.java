@@ -19,7 +19,8 @@ import me.dm7.barcodescanner.zxing.ZXingScannerView;
 public class MainQRActivity extends Activity implements ZXingScannerView.ResultHandler {
     private ZXingScannerView mScannerView;
     private ImageButton qr;
-    private String restult;
+    public static String result;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +32,10 @@ public class MainQRActivity extends Activity implements ZXingScannerView.ResultH
         setContentView(mScannerView);
         mScannerView.setResultHandler(this);
         mScannerView.startCamera();
+    }
+
+    public static String getResult(){
+        return result;
     }
 
 //    @Override
@@ -47,7 +52,7 @@ public class MainQRActivity extends Activity implements ZXingScannerView.ResultH
     public void handleResult(Result result) {
         Intent i = new Intent(MainQRActivity.this, MainFingerprintActivity.class);
         startActivity(i);
-        this.restult = result.getText();
+        this.result = result.getText();
 //        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(result.getText()));
 //        startActivity(browserIntent);
         //Do anything with result here :D

@@ -46,6 +46,7 @@ import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
 import java.security.UnrecoverableKeyException;
 import java.security.cert.CertificateException;
+import java.util.StringTokenizer;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
@@ -64,7 +65,13 @@ public class MainFingerprintActivity extends Activity {
     private static final String DIALOG_FRAGMENT_TAG = "myFragment";
     private static final String SECRET_MESSAGE = "Very secret message";
     private static final String KEY_NAME_NOT_INVALIDATED = "key_not_invalidated";
+    private String result;
     static final String DEFAULT_KEY_NAME = "default_key";
+
+    //TextViews
+    TextView company;
+    TextView balance;
+    TextView Description;
 
     private KeyStore mKeyStore;
     private KeyGenerator mKeyGenerator;
@@ -74,6 +81,16 @@ public class MainFingerprintActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fingerprint_main);
+
+        result = MainQRActivity.getResult();
+        company = (TextView) findViewById(R.id.itemTitle);
+        balance= (TextView) findViewById(R.id.itemPrice);
+        Description = (TextView) findViewById(R.id.itemDescr);
+        StringTokenizer tokens = new StringTokenizer(result, "$");
+        String first = tokens.nextToken();// this will contain "Fruit"
+        String second = tokens.nextToken();// this will contain " they taste good"
+        company.setText(first);
+        balance.setText("$" + second);
 
         try {
             mKeyStore = KeyStore.getInstance("AndroidKeyStore");

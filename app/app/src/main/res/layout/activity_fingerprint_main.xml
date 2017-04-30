@@ -51,12 +51,14 @@
                 android:paddingEnd="16dp">
 
             <TextView
+                    android:id="@+id/itemTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="@android:style/TextAppearance.Material.Headline"
                     android:text="@string/item_title"/>
 
             <TextView
+                    android:id="@+id/itemPrice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="@android:style/TextAppearance.Material.Body2"
@@ -64,12 +66,12 @@
                     android:text="@string/item_price"/>
 
             <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                    android:textColor="?android:attr/textColorSecondary"
-                    android:text="@string/item_description"/>
+                android:id="@+id/itemDescr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                android:textColor="?android:attr/textColorSecondary" />
 
         </LinearLayout>
 
