@@ -39,7 +39,7 @@ import static android.Manifest.permission.READ_CONTACTS;
  * A login screen that offers login via email/password.
  */
 public class Login extends AppCompatActivity implements LoaderCallbacks<Cursor> {
-
+    public static String type = "login";
     /**
      * Id to identity READ_CONTACTS permission request.
      */
@@ -103,12 +103,18 @@ public class Login extends AppCompatActivity implements LoaderCallbacks<Cursor> 
         mProgressView = findViewById(R.id.login_progress);
     }
 
+
     private void populateAutoComplete() {
         if (!mayRequestContacts()) {
             return;
         }
 
         getLoaderManager().initLoader(0, null, this);
+    }
+
+    public void goToMain(){
+        Intent i = new Intent(Login.this, Signup.class);
+//        startActivity(i);
     }
 
     private boolean mayRequestContacts() {
@@ -194,8 +200,10 @@ public class Login extends AppCompatActivity implements LoaderCallbacks<Cursor> 
             // Show a progress spinner, and kick off a background task to
             // perform the user login attempt.
             showProgress(true);
-            mAuthTask = new UserLoginTask(email, password);
-            mAuthTask.execute((Void) null);
+//            mAuthTask = new UserLoginTask(email, password);
+//            mAuthTask.execute((Void) null);
+            BackgroundWorker backgroundWorker = new BackgroundWorker(this);
+            backgroundWorker.execute(type, email, password);
         }
     }
 
