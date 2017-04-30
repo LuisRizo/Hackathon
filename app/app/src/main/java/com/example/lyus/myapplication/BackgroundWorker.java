@@ -22,7 +22,7 @@ import java.net.URLEncoder;
  * Created by fanfan on 4/29/17.
  */
 
-public class BackgroundWorker extends AsyncTask<String, String, String> {
+public class BackgroundWorker extends AsyncTask<String, String, String>{
 
     Context context;
     AlertDialog alertDialog;
