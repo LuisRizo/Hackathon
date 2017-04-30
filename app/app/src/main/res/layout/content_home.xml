@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.lyus.myapplication.Home"
+    tools:showIn="@layout/app_bar_main2">
+
+    <ImageButton
+        android:id="@+id/Bank"
+        android:layout_width="150dp"
+        android:layout_height="114dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/chase"
+        tools:clickable="true"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="198dp" />
+
+    <ImageButton
+        android:id="@+id/BtnQr"
+        android:layout_width="128dp"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/qr_scanner"
+        tools:clickable="true"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="383dp" />
+
+
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/BtnQr"-->
+        <!--android:layout_width="128dp"-->
+        <!--android:layout_height="91dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="124dp"-->
+        <!--android:adjustViewBounds="false"-->
+        <!--android:background="@null"-->
+        <!--android:elevation="10dp"-->
+        <!--android:onClick="onClick"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--android:visibility="visible"-->
+        <!--app:srcCompat="@drawable/yoyo"-->
+        <!--tools:clickable="true"-->
+        <!--tools:layout_editor_absoluteX="128dp"-->
+        <!--tools:layout_editor_absoluteY="383dp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView5"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="QR"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Button"-->
+        <!--android:textSize="50sp"-->
+        <!--android:textStyle="bold"-->
+        <!--tools:layout_editor_absoluteX="164dp"-->
+        <!--tools:layout_editor_absoluteY="414dp"-->
+        <!--android:layout_alignBottom="@+id/BtnQr"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="169dp" />-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chase Card\nCard Number: xxxx-xxxx-xxxx-6031\nBalance: $1800.00"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="230dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/Bank" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Hello Wilson!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="86dp"
+        android:layout_marginTop="49dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="56dp"
+        android:layout_height="41dp"
+        android:text="QR"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="164dp"
+        tools:layout_editor_absoluteY="414dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

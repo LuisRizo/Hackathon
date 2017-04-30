@@ -1,4 +1,4 @@
-package com.gnirt69.qrcodesannerexample;
+package com.example.lyus.myapplication;
 
 /**
  * Created by ycyin on 4/30/2017.
@@ -17,7 +17,7 @@ public class test extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_home);
         Button y=(Button) findViewById(R.id.button);
         final Context context = getApplicationContext();
         final int duration = Toast.LENGTH_SHORT;

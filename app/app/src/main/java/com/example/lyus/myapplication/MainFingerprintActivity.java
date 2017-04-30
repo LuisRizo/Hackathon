@@ -103,21 +103,7 @@ public class MainFingerprintActivity extends Activity {
         KeyguardManager keyguardManager = getSystemService(KeyguardManager.class);
         FingerprintManager fingerprintManager = getSystemService(FingerprintManager.class);
         Button purchaseButton = (Button) findViewById(R.id.purchase_button);
-        Button purchaseButtonNotInvalidated = (Button) findViewById(
-                R.id.purchase_button_not_invalidated);
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-            purchaseButtonNotInvalidated.setEnabled(true);
-            purchaseButtonNotInvalidated.setOnClickListener(
-                    new PurchaseButtonClickListener(cipherNotInvalidated,
-                            KEY_NAME_NOT_INVALIDATED));
-        } else {
-            // Hide the purchase button which uses a non-invalidated key
-            // if the app doesn't work on Android N preview
-            purchaseButtonNotInvalidated.setVisibility(View.GONE);
-            findViewById(R.id.purchase_button_not_invalidated_description)
-                    .setVisibility(View.GONE);
-        }
 
         if (!keyguardManager.isKeyguardSecure()) {
             // Show a message that the user hasn't set up a fingerprint or lock screen.
@@ -126,7 +112,6 @@ public class MainFingerprintActivity extends Activity {
                             + "Go to 'Settings -> Security -> Fingerprint' to set up a fingerprint",
                     Toast.LENGTH_LONG).show();
             purchaseButton.setEnabled(false);
-            purchaseButtonNotInvalidated.setEnabled(false);
             return;
         }
 

@@ -1,25 +1,40 @@
 package com.example.lyus.myapplication;
 
+import android.app.Activity;
+import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
-public class Main2Activity extends AppCompatActivity
+import com.google.zxing.Result;
+
+import me.dm7.barcodescanner.zxing.ZXingScannerView;
+
+public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private ImageButton qr;
+    private Button test;
+    private ZXingScannerView mScannerView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -29,8 +44,34 @@ public class Main2Activity extends AppCompatActivity
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
+
+        qr = (ImageButton) findViewById(R.id.BtnQr);
+        qr.setOnClickListener(new View.OnClickListener()   {
+            public void onClick(View v) {
+                Intent i = new Intent(Home.this, MainQRActivity.class);
+                startActivity(i);
+            }
+        });
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+    }
+
+//    public void Scan(){
+//        mScannerView = new ZXingScannerView(this);
+//        setContentView(mScannerView);
+//        mScannerView.setResultHandler(this);
+//        mScannerView.startCamera();
+//    }
+
+
+    public void test(View view){
+        try {
+            Toast.makeText(this, "Button pressed ", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(Home.this, MainQRActivity.class);
+            startActivity(i);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -85,4 +126,11 @@ public class Main2Activity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+//
+//    @Override
+//    public void handleResult(Result result) {
+//        Intent i = new Intent(Home.this, MainFingerprintActivity.class);
+//        startActivity(i);
+//    }
 }

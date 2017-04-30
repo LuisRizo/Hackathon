@@ -52,7 +52,7 @@
             android:parentActivityName=".Main2Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.lyus.myapplication.Main2Activity" />
+                android:value="com.example.lyus.myapplication.Home" />
         </activity>
 >>>>>>> 9f06b970351eaeacbd651d60bd0235a0f890228e
     </application>
