@@ -8,4 +8,58 @@
     tools:context="com.example.lyus.myapplication.Main2Activity"
     tools:showIn="@layout/app_bar_main2">
 
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="150dp"
+        android:layout_height="114dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/background_light"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/chase"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="198dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="128dp"
+        android:layout_height="91dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/background_light"
+        android:scaleType="fitCenter"
+        android:tint="Scan QR"
+        app:srcCompat="@drawable/qr_scanner"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="383dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chase Card\nCard Number: xxxx-xxxx-xxxx-6031\nBalance: $1800.00"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="230dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Hello Wilson!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="86dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="56dp"
+        android:layout_height="41dp"
+        android:text="QR"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="164dp"
+        tools:layout_editor_absoluteY="414dp" />
+
 </android.support.constraint.ConstraintLayout>
